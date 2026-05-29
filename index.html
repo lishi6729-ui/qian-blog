@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>潜 | Dive Into The Stars</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+</head>
+
+<body>
+
+    <!-- 星空背景视频 -->
+    <video class="bg-video" autoplay muted loop playsinline>
+        <source src="assets/video/star_sky.mp4" type="video/mp4">
+    </video>
+
+    <!-- 遮罩层 -->
+    <div class="overlay"></div>
+
+    <!-- 鼠标光晕 -->
+    <div class="cursor-glow"></div>
+
+    <!-- 音乐播放器 -->
+    <div class="music-toggle">
+        ♫
+    </div>
+
+    <div class="music-panel">
+        <audio id="bgm" loop>
+            <source src="assets/music/music.mp3" type="audio/mpeg">
+        </audio>
+
+        <h3>星空列车</h3>
+        <button id="playBtn">▶</button>
+    </div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+
+        <div class="logo">
+            潜
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="#home">首页</a>
+            </li>
+
+            <li class="dropdown">
+
+                <a href="#posts">文章</a>
+
+                <ul class="submenu">
+                    <li>AI</li>
+                    <li>Python</li>
+                    <li>Linux</li>
+                    <li>随笔</li>
+                </ul>
+
+            </li>
+
+            <li>
+                <a href="#projects">项目</a>
+            </li>
+
+            <li>
+                <a href="#collection">收藏</a>
+            </li>
+
+            <li>
+                <a href="#about">关于</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- 第一屏 -->
+    <section id="home" class="hero">
+
+        <div class="glass-card">
+
+            <img src="assets/avatar/avatar.png" class="avatar">
+
+            <h1>潜</h1>
+
+            <h2>Dive Into The Stars</h2>
+
+            <p>
+                记录代码、灵感与星空
+            </p>
+
+            <a href="#posts" class="enter-btn">
+                进入博客
+            </a>
+
+        </div>
+
+        <div class="scroll-tip">
+            ↓
+        </div>
+
+    </section>
+
+    <!-- 第二屏 -->
+    <section id="posts" class="content-section">
+
+        <h2>最新文章</h2>
+
+        <div class="card-container">
+
+            <div class="post-card">
+                <h3>AI学习笔记</h3>
+                <p>记录AI相关学习内容</p>
+            </div>
+
+            <div class="post-card">
+                <h3>Python开发日志</h3>
+                <p>项目开发过程记录</p>
+            </div>
+
+            <div class="post-card">
+                <h3>Linux折腾手册</h3>
+                <p>服务器与系统维护经验</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- 第三屏 -->
+    <section id="projects" class="content-section">
+
+        <h2>项目展示</h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                博客系统
+            </div>
+
+            <div class="project-card">
+                AI工具
+            </div>
+
+            <div class="project-card">
+                自动化脚本
+            </div>
+
+            <div class="project-card">
+                网页小游戏
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- 第四屏 -->
+    <section id="collection" class="content-section">
+
+        <h2>收藏馆</h2>
+
+        <div class="collection-box">
+
+            <div>动漫</div>
+
+            <div>音乐</div>
+
+            <div>书籍</div>
+
+            <div>网站</div>
+
+        </div>
+
+    </section>
+
+    <!-- 第五屏 -->
+    <section id="about" class="content-section">
+
+        <h2>关于我</h2>
+
+        <div class="about-card">
+
+            <h3>潜</h3>
+
+            <p>
+                热爱编程、设计与探索未知。
+            </p>
+
+            <div class="skill">
+                Python
+            </div>
+
+            <div class="skill">
+                HTML
+            </div>
+
+            <div class="skill">
+                CSS
+            </div>
+
+            <div class="skill">
+                AI
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="js/main.js"></script>
+    <script src="js/player.js"></script>
+
+</body>
+
+</html>
